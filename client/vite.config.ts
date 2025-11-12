@@ -14,6 +14,9 @@ export default defineConfig({
     viteReact(),
     tailwindcss(),
   ],
+  optimizeDeps: {
+    exclude: ['better-auth'],
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
