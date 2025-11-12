@@ -23,7 +23,7 @@ function RouteComponent() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setError('')
-    setLoading(true)
+    setLoading(false)
 
     try {
       await authClient.signIn.email({
