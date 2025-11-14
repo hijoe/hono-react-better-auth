@@ -1,12 +1,12 @@
 import { Link, useRouter } from '@tanstack/react-router'
 import { LogIn, LogOut } from 'lucide-react'
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { authClient } from '../../lib/auth-client'
 
 export default function Header() {
   const router = useRouter()
   const { data: session, isPending } = authClient.useSession()
-  const [error, setError] = useState('failed to logout')
+  const [error, setError] = useState('')
 
   useEffect(() => {
     if (error) {

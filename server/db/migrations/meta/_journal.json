@@ -15,6 +15,13 @@
       "when": 1762738986226,
       "tag": "0001_empty_screwball",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1763083291515,
+      "tag": "0002_outstanding_mariko_yashida",
+      "breakpoints": true
     }
   ]
 }
